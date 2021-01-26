@@ -23,7 +23,7 @@ client.on('ready', () => {
       .setURL(`https://www.reddit.com/r/${subreddit}`)
       .setColor('RANDOM')
       .setImage(img)
-      .setFooter('Joe mama is gay.')
+      .setFooter('69420')
       msg.channel.send(Embed);
       break;
     }
