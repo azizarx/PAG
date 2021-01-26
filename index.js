@@ -11,12 +11,13 @@ client.on('ready', () => {
    if(msg.content[0]== prefix){
      let subreddit = msg.content.split(' ')[1] 
     let command = msg.content.split(' ')[0].slice(1);
-    switch(command){
-    case'ping':
+    switch(command.toUpperCase()){
+    case'PING':
       msg.channel.send('pong');
       console.log(msg.content)
       break;
-      case 'meme': 
+      case 'MEME':
+      try{
       let img = await api(subreddit)
       const Embed = new Discord.MessageEmbed()
       .setTitle(`A meme from r/${subreddit}`)
@@ -25,6 +26,10 @@ client.on('ready', () => {
       .setImage(img)
       .setFooter('69420')
       msg.channel.send(Embed);
+      }
+      catch(err){
+        msg.channel.send(err);
+      }
       break;
     }
     
