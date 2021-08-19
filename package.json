@@ -1,7 +1,6 @@
 {
-  "name": "bot-da7naboo",
+  "name": "pagbot",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +9,24 @@
   "license": "ISC",
   "dependencies": {
     "api": "^2.5.0",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
+    "firebase": "^8.4.1",
+    "firebase-admin": "^9.6.0",
     "imageapi.js": "^1.3.2",
-    "node-fetch": "^2.6.1"
-  }
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizarx/PAG.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azizarx/PAG/issues"
+  },
+  "homepage": "https://github.com/azizarx/PAG#readme",
+  "description": ""
 }
